@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <head>
+        <title>Welcome Students!!!</title>
+    </head>
+    <body>
+        <h:form> 
+            <div id="banner"> <img src="uhcl.p.png" alt=""/> </div>
+            <div><p>Welcome to UHCL-Eservices!</p></div>
+            
+                <h:commandButton id="Regiter" value="Go"  
+                                 action="register.xhtml" />  
+                <p>
+                      <h:commandButton id="ClassSchedule" value="Reset Password"  
+                                 action="classschedule.xhtml" />  
+               <br></br><br></br>
+               <h:commandButton id="DropClass" value="Account Transfer"  
+                                 action="dropclass.xhtml" />  
+               <br></br><br></br>
+               <h:commandButton id="ViewBill" value="Account Transfer"  
+                                 action="viewbill.xhtml" /> 
+               <br></br>
+               <h:commandButton id="SignOut" value="Sign Out"  
+                                action="#{logout.logout()}" />    
+                </p>
+        </h:form>
+    </body>
+</html>
